@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {box-sizing: border-box}
+body{
+	margin: 0;
+	font-family: Verdana, "sans-serif";
+	background-color: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #333333;
+}
+
+::selection {
+  color: white;
+  background: #333333;
+}
+
+.clearfix{
+	content: "";
+	clear: none;
+	display: table;
+	overflow: auto; 
+}
+
+.page-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	width: 70%;
+}
+
+/* code for header */
+.header{
+	height: 60px;
+	width: 70%;
+	background-color: rgba(255,255,255,0.9);
+	top: 0;
+	position: fixed;
+	transition: top 0.3s;
+	display: block;
+}
+
+.nav-logo{
+	float: left;
+	margin: auto;
+}
+
+nav ul{
+	padding-top: 10px;
+	list-style-type: none;
+	text-align: right;
+	
+}
+nav a{
+	margin-top: auto;
+	margin-bottom: auto;
+	text-decoration: none;
+	font-size: 10pt;
+	color: black;
+	display: inline-block;
+	margin-left: 30px;
+	float: right;	
+}
+
+nav a:hover {
+	border-bottom: 3px solid #CCCCCC;
+}
+
+/* code for main page */
+
+.main-content{
+	margin-top: 120px;
+}
+
+.bio-container, .quickURL, .slideTxt{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+	
+	margin-bottom: 20px;
+}
+.bio-photo, .URLintro{
+	
+	width: 35%;
+	margin-right: 5%;
+}
+.bio-photo img{
+	width: 100%;
+}
+
+.bio-info{
+	
+	width: 60%;
+}
+
+.bio-info h2{
+	font-size: 14pt;
+	line-height: 20px;
+}
+.quickURL p{
+	text-align: right;
+	color: gray;
+	font-size: 11pt;
+}
+.quickURL a{
+	margin-right: 5%;
+	text-decoration: none;
+	color: black;
+	font-size: 11pt;
+	padding: 10px 15px;
+}
+
+.quickURL a:hover{
+	background-color: #FFCD34;
+	color: gray;
+}
+.news-container{
+	margin-top: 80px;
+}
+
+.news-div{
+	clear: left;
+	
+}
+
+.news-div p{
+	font-size: 11pt;
+	line-height: 25px;
+	margin-top: 10px;
+	
+}
+.news-date{
+	float: left;
+	width: 8%;
+	margin-right: 5%;
+	color: gray;
+}
+
+.news-content{
+	float: left;
+	width: 87%;
+
+}
+
+.select-project{
+	margin-top: 100px;
+}
+
+.projectSlide-container {
+	position: relative;
+	margin: auto;
+	
+}
+
+.mySlides img{
+	margin-top: 20px;
+	
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+	top: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 15px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 40px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15px;
+  border-radius: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #FFCD34;
+	background-color: dimgray;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slideTxt{
+	margin-top: 10px;
+}
+
+.slideTxt p{
+	font-size: 14pt;
+	line-height: 35px;
+}
+
+.slideTxt a{
+	right: 0;
+	position: absolute;
+	padding-bottom: 5px;
+
+}
+
+
+/* code for publication page */
+
+.publication-intro p, .bio-container p{
+	text-decoration: none;
+	font-size: 11pt;
+	line-height: 25px;
+}
+
+.publication-container{
+	margin-top: 80px;
+}
+
+.publication-container h3, .news-container h3, .select-project h3{
+	background-color: black;
+	font-size: 12pt;
+	color: white;
+	float: left;
+	clear: left;
+	padding: 5px 10px;
+	margin-bottom: 30px;
+}
+
+.publication-container p{
+	clear: left;
+	text-decoration: none;
+	margin-bottom: 20px;
+	font-size: 11pt;
+	line-height: 25px;
+	
+}
+
+.publication-container a, .publication-intro a, .news-div a, .bio-container a{
+	text-decoration: none;
+	color: black;
+	border-bottom: 3px solid #CCCCCC;
+}
+
+.publication-container a:hover, .publication-intro a:hover, .news-div a:hover, .bio-container a:hover {
+	border-bottom: 3px solid #FFCD34;
+}
+
+/* code for footer */
+
+.footer{
+	
+	margin-top: 100px;
+	margin-bottom: 20px;
+	border-top: 1px solid gray;
+}
+.footinfo-div{
+	margin-top: 20px;
+	
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+.footinfo-container{
+	margin-right:60px;
+	
+	
+}
+.footinfo-container img{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footinfo-container p{
+	font-size:10pt;
+	display: inline-block;
+	text-align: left;
+	line-height: 20px;
+}
+
+.footinfo-container a, .slideTxt a{
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+.footinfo-container a:hover, .slideTxt a:hover{
+	border-bottom: 2px solid #FFCD34;
+}
+
+.copyright-claim{
+	width:100%;
+}
+
+.copyright-claim p{
+	font-size:10pt;
+	float:right;
+	color: gray;
+}
