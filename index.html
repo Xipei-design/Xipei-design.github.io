@@ -3,123 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>about Xipei</title>
+<title>about me - Xipei Ren</title>
 	<link rel="stylesheet" href="css/webstyle.css">
 	<script src="js/webstyle.js"></script>
 </head>
 
-<body onLoad="showSlides(slideIndex)">
+<body>
 	<main class="page-wrapper clearfix">
-		<div class="header" id="navHeader">
-			<div class="nav-logo">
-				<h2>XIPEI REN</h2>
+		<div class="header">
+			<div class="nav-header">
+				<div class="nav-logo">
+					<h2>Xipei Ren</h2>
+					<h3>Design Researcher <br>of Smart Health</h3>
+				</div>
+				<div class="nav-container" onclick="myFunction(this)">
+ 				 <div class="bar1"></div>
+ 				 <div class="bar2"></div>
+ 				 <div class="bar3"></div>
+				</div>
 			</div>
-				<nav class="nav-bar">
+			<nav class="nav-bar" id="navi-list">
 				<ul>
-					<li><a href="publications.html">LIFE</a>
+					<li><a href="index.html" style = "font-weight: bolder; color: black;">About</a>
 					</li>
-					<li><a href="publications.html">PUBLICATIONS</a>
+					<li><a href="projects.html">Projects</a>
 					</li>
-					<li><a href="publications.html">PROJECTS</a>
+					<li><a href="publications.html">Publications</a>
 					</li>
-					<li><a href="index.html" style = "border-bottom: 3px solid #FFCD34;">ABOUT</a>
+					<li><a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
-		<div class="main-content">
+		<div class="main-content" id="pgContent">
 			<div class="bio-container">
-				<div class="bio-photo">
-					<img src="img/portrait_v.jpg" alt="">
+				<div class="bio-info">
+				<img src="img/bio_photo.jpg" width="100%" alt="">
 				</div>
 				<div class="bio-info">
-					<h2 style="line-height: 30px;">Hi! I am Xipei. <br><u style = " text-decoration:none; color: dimgray; border-bottom: 2px solid #FFCD34;">I focus on technology for health.</u></h2>
-					<p>As a design researcher with a background in industrial design, <br>I am interested in exploring new forms of intelligent product service systems <br>in relation to health promotion, human vitality, and healthcare provision. </p>
+					<h2>Bio</h2>
+					<p>Hello, I am Xipei. As a design researcher with a background in industrial design, I am interested in exploring new forms of intelligent product service systems in relation to health promotion, human vitality, and healthcare provision. </p>
+					<p>Currently, I am a <a href="https://research.tue.nl/en/persons/xipei-ren" target="_blank">postdoc</a> researcher in the department of Industrial Design (ID) at Eindhoven University of Technology (<a href="https://www.tue.nl/en/our-university/departments/industrial-design/" target="_blank">TU/e</a>). I recently received a <a href="https://research.tue.nl/en/publications/work-or-workout-designing-interactive-technology-for-workplace-fi" target="_blank">Ph.D.</a> degree also from ID at TU/e, under the supervison of <a href="https://www.tue.nl/en/research/researchers/yuan-lu/" target="_blank">Dr.Yuan Lu</a> and <a href="https://www.tue.nl/en/research/researchers/aarnout-brombacher/" target="_blank">Prof.dr.Aarnout Brombacher</a>. I regularly publish scientific papers in international journals and conferences in the field of human-computer interaction or digital health, and presents research projects in design exhibitions globally. I coach students at TU/e on design and research projects at batchelor, master, and Ph.D. levels. I sometimes travel to universities and research institutions in China to give lectures.</p>
+					<p>My research often conducts in collaborative settings with partners from academia and industry. I take qualitative inquiry and participatory design to understand users and contexts and derive design requirements for health technology; I follow iterative design processes to develop concepts, mockups, and functional prototypes; I use quantitative and qualitative evaluations to study the meaning of novel designs to people's life and measure their impacts on health, well-being, and beyond. </p>
+					<p><a href="cv/cv_en.pdf">Download my CV (update:01-11-2019)</a></p>
 				</div>
-			</div>
-			<div class="bio-container">
-				<p>My research often conducts in collaborative settings with partners from academia and industry. I take qualitative inquiry and participatory design to understand users and contexts and derive design requirements for health technology; I follow iterative design processes to develop concepts, mockups, and functional prototypes; I use quantitative and qualitative evaluations to study the meaning of novel designs to people's life and measure their impacts on health, well-being, and beyond.</p>
-			</div>
-			<div class="bio-container">
-				<p>Currently, I am a <a href="">postdoc</a> researcher in the department of Industrial Design (ID) at Eindhoven University of Technology (<a href="">TU/e</a>). I recently received a <a href="">Ph.D.</a> degree also from ID at TU/e, under the supervison of <a href="">Dr.Yuan Lu</a> and <a href="">Prof.dr.Aarnout Brombacher</a>. I regularly publish scientific papers in international journals and conferences in the field of human-computer interaction or digital health, and presents research projects in design exhibitions globally. I coach students in ID at TU/e on design and research projects at batchelor, master, and Ph.D. levels. I sometimes travel to universities and research institutions in China to give lectures. Please feel free to explore this website to find me more. Cheers!</p>
-			</div>
-			<div class="quickURL">
-				<p class="URLintro">shortcuts to my — </p>
-				<a href="cv/cv_en.pdf"><b>[ CV ]</b></a>
-				<a href=""><b>[ Postdoc project ]</b></a>
-				<a href=""><b>[ Ph.D. project ]</b></a>
-			</div>
-			<div class="select-project">
-				<h3>Featured Projects</h3>
-				<div class="projectSlide-container">
-					<div class="mySlides fade">
-						<img src="img/Workout_c.jpg" style="width:100%" alt="">
-						<div class="slideTxt">
-							<p><b>Work or Workout? — </b> Designing Interactive Technology<br>for Workplace Fitness Promotion.</p>
-							<a href="">[ my Ph.D. Thesis ]</a>
-						</div>
-						<p>01 / 06</p>
-					</div>
-					<div class="mySlides fade">
-					<img src="img/VDC_c.jpg" style="width:100%" alt="">
-					<div class="slideTxt">
-						<p><b>Vitality Data Centre — </b>Combining Personal Behavior with<br>Contextual Information for Facilitating Vitality Living Lab.</p>
-						<a href="">[ VDC publication ]</a>
-					</div>
-					<p>02 / 06</p>
-				</div>
-				<div class="mySlides fade">
-					<img src="img/LightSit_c.jpg" style="width:100%" alt="">
-					<div class="slideTxt">
-						<p><b>LightSit — </b> An unobtrusive health-promoting system <br>for relaxation and fitness microbreaks at work.</p>
-						<a href="">[ LightSit publication ]</a>
-					</div>
-					<p>03 / 06</p>
-				</div>
-				
-				<div class="mySlides fade">
-					<img src="img/healthSit_c.jpg" style="width:100%" alt="">
-					<div class="slideTxt">
-						<p><b>HealthSit — </b>Posture-Based Interactions<br>to Promote Office-Desk Exercises.</p>
-						<a href="">[ HealthSit publication ]</a>
-					</div>
-					<p>04 / 06</p>
-				</div>
-				<div class="mySlides fade">
-					<img src="img/perswedo_c.jpg" style="width:100%" alt="">
-					<div class="slideTxt">
-						<p><b>Perswedo Design Studio — </b> A Toolkit for Studio-Based Learning<br>to Integrate Persuasive Technology into Service Design.</p>
-						<a href="">[ Perswedo publication ]</a>
-					</div>
-					<p>05 / 06</p>
-				</div>
-				<div class="mySlides fade">
-					<img src="img/sbs_c.jpg" style="width:100%" alt="">
-					<div class="slideTxt">
-						<p><b>Step by Step — </b> Workplace Social Exergames to Encourage <br>Physical Activity and Social Dynamics among Office Workers.</p>
-						<a href="">[ Step-by-Step publication ]</a>
-					</div>
-					<p>06 / 06</p>
-				</div>
-				<!-- Next and previous buttons -->
-  				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
- 			 	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				<!--<p style="text-align: center;"><a href="">[ see all my projects ]</a></p>-->
-			</div>
-			<div class="news-container">
-				<h3>News</h3>
+				<div class="bio-info">
+					<h2>Recent Activities</h2>
 				<div class="news-div">
 					<p class="news-date"><b>12-2019</b></p>
 					<p class="news-content">I will give guest lectures on "Life Probes and Programming" at <a href="http://www.cafa.edu.cn/st/2019/10119703.htm" target="_blank">Central Academy of Fine Arts</a> (Beijing, China).</p>
 				</div>
 				<div class="news-div">
 					<p class="news-date"><b>11-2019</b></p>
-					<p class="news-content">I will attend <a href="https://www.acm-digitalhealth.org/" target="_blank">the 9th International Digital Public Health conference</a> (Marseille, France) and present the first paper based on our <a href="https://vitalityacademy.eu/vitality-data-centre/" target="_blank">VDC project</a>.</p>
+					<p  class="news-content">I will attend <a href="https://www.acm-digitalhealth.org/" target="_blank">the 9th International Digital Public Health conference</a> (Marseille, France) and present the research paper based on our <a href="https://vitalityacademy.eu/vitality-data-centre/" target="_blank">VDC project</a>.</p>
+				</div>
+				<div class="news-div">
+					<p class="news-date"><b>11-2019</b></p>
+					<p  class="news-content">My research proposal "Smart Office for Promoting Healthy Behaviors in the Work Routine" has been awarded <a href="https://www.nwo.nl/en/funding/our-funding-instruments/gw/creative-industry/creative-industry---knowledge-innovation-mapping-kiem/creative-industry---knowledge-innovation-mapping-kiem.html" target="_blank">a NWO KIEM Creative Industries grant</a>.</p>
 				</div>
 				<div class="news-div">
 					<p class="news-date"><b>10-2019</b></p>
-					<p class="news-content"> I will attend <a href="https://www.unido.org/news/world-industrial-design-conference-and-industrial-design-world-expo-take-place-china" target="_blank">the 2019 World Industrial Design Conference</a> (Yantai, China) and exhibit our LightSit project.</p>
+					<p class="news-content"> I attended <a href="https://www.unido.org/news/world-industrial-design-conference-and-industrial-design-world-expo-take-place-china" target="_blank">the 2019 World Industrial Design Conference</a> (Yantai, China) and exhibited our LightSit project.</p>
 				</div>
 				<div class="news-div">
 					<p class="news-date"><b>07-2019</b></p>
@@ -150,22 +94,11 @@
 					<p class="news-content">I am appointed as a postdoc researcher by the <a href="https://vitalityacademy.eu/vitality-data-centre/" target="_blank">Vitality Data Centre (VDC) project</a> at TU/e.</p>
 				</div>
 			</div>
+			</div>
+
 		
 		</div>
-		<div class="footer">
-			<h4>Contact</h4>
-			<div class="footinfo-div">
-				<div class="footinfo-container">
-				<img src="img/mail.png" width="25" alt="">
-				<p><b>dr.Xipei Ren</b> | postdoc researcher<br><a href="mailto:x.ren@tue.nl">x.ren[at]tue[dot]nl</a></p>
-			</div>
-				<div class="footinfo-container">
-				<img src="img/visit.png" width="25" alt="">
-				<p>Industrial Design Department, Eindhoven University of Technology<br>Atlas 7.128, 5612 AZ Eindhoven, The Netherlands</p>
-			</div>
-			</div>
-		</div>
-		<div class="copyright-claim">
+		<div class="copyright-claim" id="footage">
 				<p>© 2019 By Xipei Ren</p>
 		</div>
 	</main>

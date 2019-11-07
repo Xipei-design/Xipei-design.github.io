@@ -2,7 +2,7 @@
 
 
 
-var prevScrollpos = window.pageYOffset;
+/*var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -13,20 +13,21 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 };
 
-var slideIndex = 1;
+*/
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1;} 
-  if (n < 1) {slideIndex = slides.length;}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  slides[slideIndex-1].style.display = "block"; 
+function myFunction(x) {
+  	x.classList.toggle("change");
+	var m = document.getElementById("navi-list");
+	var h = document.getElementById("pgContent");
+	var h1 = document.getElementById("footage");
+	if(m.style.display==="block"){
+	   m.style.display = "none";
+	   h.style.display = "block";
+	   h1.style.display = "block";
+	   }else{
+	   m.style.display = "block";
+	   h.style.display = "none";
+	   h1.style.display = "none";
+	   }
 }
