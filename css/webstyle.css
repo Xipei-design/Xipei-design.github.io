@@ -298,9 +298,8 @@ nav a:hover {
   position: relative;
   margin-left: 40px;
   margin-right: 40px;
-  padding-bottom: 52%;
+  padding-bottom: 56.25%;
   overflow: hidden;
-	z-index: -1;
 }
 		
 .embed-container iframe,
