@@ -99,6 +99,7 @@ nav a:hover {
 
 .bio-info{
 	margin-bottom: 100px;
+	margin-left: 40px;
 }
 
 .bio-info h2, .publication-container h2{
@@ -214,12 +215,14 @@ nav a:hover {
 
 .publication-intro{
 	margin-bottom: 100px;
+	margin-left: 40px;
 	width: 80%;
 }
 
 .publication-container{
 	margin-bottom: 100px;
 	width: 80%;
+	margin-left: 40px;
 }
 
 .publication-container p{
@@ -295,9 +298,8 @@ nav a:hover {
   position: relative;
   margin-left: 40px;
   margin-right: 40px;
-  padding-bottom: 52%;
+  padding-bottom: 56.25%;
   overflow: hidden;
-	z-index: -1;
 }
 		
 .embed-container iframe,
