@@ -102,6 +102,46 @@ nav a:hover {
 	margin-left: 40px;
 }
 
+.banner-info{
+	display: block;
+	margin-left: -40px;
+	padding: 40px;
+	margin-right: -40px;
+	background-color: lightgray;
+}
+.banner-img{
+	position: absolute;
+	bottom: -50px;
+	right: -5%;
+	left: -5%;
+	z-index: -1;
+	width: 110%;
+	opacity: 0.5;
+}
+.ws-info{
+	position: relative;
+	margin-bottom: 60px;
+	margin-left: 80px;
+}
+
+.ws-info h4, .ws-info h5{
+	padding-top: 20px;
+}
+
+.ws-video{
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.ws-container{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 .bio-info h2, .publication-container h2{
 	font-size: 14pt;
 	font-weight: lighter;
@@ -156,6 +196,8 @@ nav a:hover {
 	
 }
 
+
+
 .project-container{
 	margin-left: 40px;
 }
@@ -205,7 +247,7 @@ nav a:hover {
 
 /* code for publication page */
 
-.publication-intro p, .bio-container p{
+.publication-intro p, .bio-container p, .ws-container p{
 	text-decoration: none;
 	color: #212121;
 	font-size: 10pt;
@@ -235,13 +277,13 @@ nav a:hover {
 	
 }
 
-.publication-container a, .publication-intro a, .news-div a, .bio-container a, .projectPBC a, .projectDT-container a{
+.publication-container a, .publication-intro a, .news-div a, .bio-container a, .projectPBC a, .projectDT-container a, .ws-container a{
 	text-decoration: none;
 	color: black;
 	border-bottom: 2px solid #CCCCCC;
 }
 
-.publication-container a:hover, .publication-intro a:hover, .news-div a:hover, .bio-container a:hover, .projectPBC a:hover, .projectDT-container a:hover{
+.publication-container a:hover, .publication-intro a:hover, .news-div a:hover, .bio-container a:hover, .projectPBC a:hover, .projectDT-container a:hover, .ws-container a:hover{
 	border-bottom: 2px solid #FFCD34;
 }
 .contact-container{
@@ -312,6 +354,22 @@ nav a:hover {
   height: 100%;
 }
 
+.embedws-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+		
+.embedws-container iframe,
+.embedws-container object,
+.embedws-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .nav-container {
   display: none;
@@ -350,9 +408,10 @@ nav a:hover {
 	nav a{text-align:left; font-size: 12pt;}
 	nav li{margin-bottom: 60pt;}
 	.main-content{margin-top: 140px; margin-left: 0; margin-right: 0;}
-	.project-container p, .footinfo-container p, .publication-container p, .publication-intro p, .bio-container p, .projectDT-container p{font-size: 9pt;}
-	.bio-container, .publication-container, .publication-intro{width: 100%;}
+	.project-container p, .footinfo-container p, .publication-container p, .publication-intro p, .bio-container p, .projectDT-container p, .ws-container p{font-size: 9pt;}
+	.bio-container, .publication-container, .publication-intro, .ws-container{width: 100%;}
 	.footinfo-container{padding: 0;}
+	.ws-info{margin-left: 0;}
 	.contact-container{top: 140px;left: 5%; right: 5%;}
 	.news-div, .news-date, .news-content{display: block;}
 	.news-content{margin-left: 0;}
