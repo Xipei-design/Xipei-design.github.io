@@ -80,6 +80,11 @@ nav a{
 	
 }
 
+#navi-list a.active{
+	font-weight: bolder; 
+	color: black;
+}
+
 nav a:hover {
 	color: black;
 }
@@ -107,8 +112,20 @@ nav a:hover {
 	margin-left: -40px;
 	padding: 40px;
 	margin-right: -40px;
-	background-color: lightgray;
+	background-image: url('../img/cover img/workshop.jpg');
+	background-position: center;
+	background-size: cover;
+	color: white;
 }
+
+
+.banner-info h3>span, .banner-info h1>span, .banner-info h4>span{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
 .banner-img{
 	position: absolute;
 	bottom: -50px;
@@ -148,6 +165,30 @@ nav a:hover {
 	padding-top: 0;
 	color: dimgray;
 	margin-bottom: 20px;
+}
+
+.ws-bio{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: baseline;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bio-photo{
+
+	border-radius: 50%;
+
+}
+
+.bio-txt{
+	width: 75%;
+	margin-left: 5%;
+
 }
 
 .news-div{
