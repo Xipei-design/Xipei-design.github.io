@@ -145,14 +145,7 @@ nav a:hover {
 	padding-top: 20px;
 }
 
-.ws-video{
-	float: left;
-	width: 50%;
-	margin-top: 10px;
-	margin-bottom: 60px;
-	padding-left: 1%;
-	padding-right: 1%;
-}
+
 
 .ws-container{
 	width: 100%;
@@ -395,10 +388,23 @@ nav a:hover {
   height: 100%;
 }
 
+.ws-video{
+	flex: 50%;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.wsv-container{
+	display: flex;
+}
+
 .embedws-container {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 		
 .embedws-container iframe,
