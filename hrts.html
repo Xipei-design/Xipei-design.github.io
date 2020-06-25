@@ -29,16 +29,6 @@
                     scrollTop: $("#cfp-info").offset().top
                 }, 1000);
             });
-            $("#org").click(function (){
-            	$("#hom").removeClass('active');
-            	$("#cfp").removeClass('active');
-            	$("#prg").removeClass('active');
-            	$("#acp").removeClass('active');
-            	$(this).addClass('active');
-                $('html, body').animate({
-                    scrollTop: $("#org-info").offset().top
-                }, 1000);
-            });
             $("#prg").click(function (){
             	$("#hom").removeClass('active');
             	$("#org").removeClass('active');
@@ -47,6 +37,16 @@
             	$(this).addClass('active');
                 $('html, body').animate({
                     scrollTop: $("#prg-info").offset().top
+                }, 1000);
+            });
+            $("#org").click(function (){
+            	$("#hom").removeClass('active');
+            	$("#cfp").removeClass('active');
+            	$("#prg").removeClass('active');
+            	$("#acp").removeClass('active');
+            	$(this).addClass('active');
+                $('html, body').animate({
+                    scrollTop: $("#org-info").offset().top
                 }, 1000);
             });
             $("#acp").click(function (){
@@ -59,7 +59,7 @@
                     scrollTop: $("#acp-info").offset().top
                 }, 1000);
             });
-            			$(window).on('scroll', function() {
+            $(window).on('scroll', function() {
        			if($(window).scrollTop() >= $("#hom-info").offset().top) {
        			 	$("#cfp").removeClass('active');
            			$("#org").removeClass('active');
@@ -74,19 +74,19 @@
            			$("#acp").removeClass('active');
            			$("#cfp").addClass('active');
        			}
-       			if($(window).scrollTop() >= $("#org-info").offset().top) {
-       			 	$("#hom").removeClass('active');
-           			$("#cfp").removeClass('active');
-           			$("#prg").removeClass('active');
-           			$("#acp").removeClass('active');
-           			$("#org").addClass('active');
-       			}
        			if($(window).scrollTop() >= $("#prg-info").offset().top) {
        			 	$("#hom").removeClass('active');
            			$("#cfp").removeClass('active');
            			$("#org").removeClass('active');
            			$("#acp").removeClass('active');
            			$("#prg").addClass('active');
+       			}
+       			if($(window).scrollTop() >= $("#org-info").offset().top) {
+       			 	$("#hom").removeClass('active');
+           			$("#cfp").removeClass('active');
+           			$("#prg").removeClass('active');
+           			$("#acp").removeClass('active');
+           			$("#org").addClass('active');
        			}
        			if($(window).scrollTop() >= $("#acp-info").offset().top) {
        			 	$("#hom").removeClass('active');
@@ -144,13 +144,13 @@
 					<hr style="border: 0.5px dashed;">
 					<h4 id="cfp-info">Call for Papers</h4>
 					<p>We propose a promising but underexplored opportunity for HCI design — to promote micro health interventions by integrating them into users’ everyday tasks with technology devices without disrupting users’ ongoing routines (namely: <i>healthful routine technologies</i> (<b>HRTs</b>)). One simple example could be enabling users to perform healthy behavors such as bodily exertion or deep breathing, as a means to interact with technologies, while they are already engaged in some primary activities with those technologies (e.g., working in front of your computer). As such, we aim at confering micro health gains without disrupting ongoing technology-assisted activities.</p>
-					<p>To navigate this new design space, this workshop calls for interdisciplinary endeavors, synergizing expertise from HCI design, health informatics, persuasive technology, exertion game, and psychology. We invite submissions of research position papers or intervention/design proposals: <b>2-4 pages in <a href="https://chi2020.acm.org/authors/chi-proceedings-format/#EAF" target="_blank">CHI Extended Abstracts format</a>.</b> We welcome contributions related (but not limited) to the following aspects </p>
+					<p>We invite submissions of research position papers or intervention/design proposals: <b>2-4 pages in <a href="https://chi2020.acm.org/authors/chi-proceedings-format/#EAF" target="_blank">CHI Extended Abstracts format</a>.</b> We welcome contributions related (but not limited) to the following aspects: </p>
 					<p><br><i>- Novel healthful interactions, e.g., peripheral interaction, exertion games, playful interaction, embodied tangible interaction, etc.</i></p>
 					<p><i>- Understand users and/or contexts for designing health-promoting technologies.</i></p>
 					<p><i>- Behavior change technologies, e.g., persuasive strategies, nudging, social influences, etc.</i></p>
 					<p><i>- Psychological and/or physiological research for improving health behaviors</i></p>
 					<p><i>- Personal informatics for supporting healthy lifestyles.</i></p>
-					<p><i>- Other research explorations that are relevant to this topic</i></p>
+					<p><i>- Other research explorations that are relevant to this topic.</i></p>
 					<p><br>All the submissions will be peer-reviewed by our interdisciplinary review committee. The accepted papers are eligible to submit an extended verion in a special edition of a journal (TBC).</p>
 					<p><b>Important Dates</b></p>
 					<p>- Deadline for submissions: <b>03 Jul 2020</b></p>
