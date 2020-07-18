@@ -39,16 +39,6 @@
                     scrollTop: $("#prg-info").offset().top
                 }, 1000);
             });
-            $("#org").click(function (){
-            	$("#hom").removeClass('active');
-            	$("#cfp").removeClass('active');
-            	$("#prg").removeClass('active');
-            	$("#acp").removeClass('active');
-            	$(this).addClass('active');
-                $('html, body').animate({
-                    scrollTop: $("#org-info").offset().top
-                }, 1000);
-            });
             $("#acp").click(function (){
             	$("#hom").removeClass('active');
             	$("#org").removeClass('active');
@@ -57,6 +47,16 @@
             	$(this).addClass('active');
                 $('html, body').animate({
                     scrollTop: $("#acp-info").offset().top
+                }, 1000);
+            });
+            $("#org").click(function (){
+            	$("#hom").removeClass('active');
+            	$("#cfp").removeClass('active');
+            	$("#prg").removeClass('active');
+            	$("#acp").removeClass('active');
+            	$(this).addClass('active');
+                $('html, body').animate({
+                    scrollTop: $("#org-info").offset().top
                 }, 1000);
             });
             $(window).on('scroll', function() {
@@ -81,19 +81,19 @@
            			$("#acp").removeClass('active');
            			$("#prg").addClass('active');
        			}
-       			if($(window).scrollTop() >= $("#org-info").offset().top) {
-       			 	$("#hom").removeClass('active');
-           			$("#cfp").removeClass('active');
-           			$("#prg").removeClass('active');
-           			$("#acp").removeClass('active');
-           			$("#org").addClass('active');
-       			}
        			if($(window).scrollTop() >= $("#acp-info").offset().top) {
        			 	$("#hom").removeClass('active');
            			$("#cfp").removeClass('active');
            			$("#prg").removeClass('active');
            			$("#org").removeClass('active');
            			$("#acp").addClass('active');
+       			}
+       			if($(window).scrollTop() >= $("#org-info").offset().top) {
+       			 	$("#hom").removeClass('active');
+           			$("#cfp").removeClass('active');
+           			$("#prg").removeClass('active');
+           			$("#acp").removeClass('active');
+           			$("#org").addClass('active');
        			}
 			});
         });
@@ -119,9 +119,9 @@
 					</li>
 					<li><a id="prg" style = "cursor: pointer;">Program</a>
 					</li>
-					<li><a id="org" style = "cursor: pointer;">Organizers</a>
-					</li>
 					<li><a id="acp" style = "cursor: pointer;">Accepted Papers</a>
+					</li>
+					<li><a id="org" style = "cursor: pointer;">Organizers</a>
 					</li>
 				</ul>
 			</nav>
@@ -135,7 +135,7 @@
 					<div id="hom-info" class="banner-info">
 					<h3><span>Workshop at the <a href="https://dis.acm.org/2020/index.html" target="_blank" style="color: white; text-decoration: none; border-bottom: none;" onMouseout = "this.style.color = 'white';" onMouseover = "this.style.color = '#FFCD34';">ACM Designing Interactive Systems conference 2020</a></span></h3>
 					<h1><span>Weaving Healthy Behaviors into New Technology Routines: Designing in (and for) the COVID-19 Work-from-Home Period</span></h1>
-					<h4><span>3 hours | online | 20th July - 26th July (tbd)</span></h4>
+					<h4><span>3 hours | online | 20th July 7 AM - 10 AM (CEST)</span></h4>
 					</div>
 					<p><br>Sitting in front of computers has become a major part of our workaday routines, challenging us in maintaining active and healthy lifestyles. This challenge becomes even more salient during this worldwide work-from-home period due to COVID-19. While a large variety of existing interactive systems have been developed to facilitate health tracking and healthy exercises, relatively little research concerns incorporating healthy behaviors as HCI elements in daily routines.</p>
 					<p>To maximize pervasive health benefits in users’ technology routines, this workshop sets out to explore a design paradigm that enables users to use lightweight, healthy behaviors to perform daily interactions with computing systems. To navigate this new design space, this workshop calls for interdisciplinary endeavors, synergizing expertise from HCI design, health informatics, persuasive technology, exertion game, and psychology.</p>
@@ -176,7 +176,7 @@
 				<div class="ws-info">
 					<hr style="border: 0.5px dashed;">
 					<h4 id="prg-info">Program</h4>
-					<p>Online channel: Zoom (room number: TBA)</p>
+					<p>Online channel: Zoom (ID: 925 4971 5545)</p>
 					<p><i>Session 1: Paper Pitch</i></p>
 					<div class="news-div">
 						<p class="news-date"><b>10-min <br>40-min <br>10-min</b></p>
@@ -200,6 +200,18 @@
 						<p class="news-date"><b>20-min <br>20-min <br>20-min</b></p>
 						<p class="news-content">Presentation of subgroups to wider group <br>Cross groups discussion <br>Concluding remarks and outlook</p>
 					</div>
+				</div>
+				<div class="ws-info">
+					<hr style="border: 0.5px dashed;">
+					<h4 id="acp-info">Accepted Papers</h4>
+					<p>Click to download the papers</p>
+					<p><b><a href="wspapers/dishrts-01.pdf" target="_blank">Continuous and Autonomous Job Crafting Support in the Home Environment.</a></b><br>J. J. Laenen (TU/e)</p>
+					<p><b><a href="wspapers/dishrts-02.pdf" target="_blank">MyMeals: Intelligent Healthy Meal Planning Assistant During COVID-19.</a></b><br>Tianjie Zhu (SJSU), Michael Chiang (SJSU), Linh Trac (SJSU), Joshua Zanger (SJSU), Alison Nguyen (SJSU), Yu Chen (SJSU)</p>
+					<p><b><a href="wspapers/dishrts-03.pdf" target="_blank">Connecting Physical Activity with Office Work through Integrated Systems.</a></b><br>Ida Damen (TU/e)</p>
+					<p><b><a href="wspapers/dishrts-04.pdf" target="_blank">Contextualizing Digital Services to Promote Healthy Eating in the Office.</a></b><br>Sibo Pan(TU/e), Xipei Ren (TU/e), Desiree Lucassen (WUR), Elske Brouwer-Brolsma (WUR), Aarnout Brombacher (TU/e), Steven Vos (TU/e & Fontys)</p>
+					<p><b><a href="wspapers/dishrts-05.pdf" target="_blank">Clover: A Preliminary Concept of the (Co)Design Toolkit for the Vital Work-Life Scenario.</a></b><br>Xiang Yu (TU/e), Aarnout Brombacher (TU/e), Steven Vos (TU/e & Fontys)</p>
+					<p><b><a href="wspapers/dishrts-07.pdf" target="_blank">Designing for Mindfulness in the COVID-19 Work-from-Home Period.</a></b><br>Bin (Tina) Zhu (KTH)</p>
+					<p><b><a href="wspapers/dishrts-06.pdf" target="_blank">FITT-table: Automatic Standing Table for an Active Work Style.</a></b><br>Hans Brombacher (TU/e)</p>
 				</div>
 				<div class="ws-info" >
 					<hr style="border: 0.5px dashed;">
@@ -236,11 +248,6 @@
 						<img class="bio-photo" src="img/hrts organizer/08.jpeg" style="width:20%" alt="">
 						<p class="bio-txt"><b>Dr. Gabriele Spina</b> is currently a data scientist at HumanTotalCare. He received both his B.Sc. and M.Sc. cum laude in biomedical Engineering from the Campus BioMedico University of Rome. In 2016 he received his Ph.D. from the Eindhoven University of Technology. His research focused on the use of wearable sensors and machine learning techniques in healthcare systems to monitor patient’s status and provide insight into daily life activities. He is author of several publications and patents in this field. In 2018, after spending 4 years at Philips Research, he joined HumanTotalCare to work on the development of new AI-based services for the occupational health sector.</p>
 					</div>
-				</div>
-				<div class="ws-info">
-					<hr style="border: 0.5px dashed;">
-					<h4 id="acp-info">Accepted Papers</h4>
-					<p>TBA</p>
 					<hr style="border: 0.5px dashed;">
 				</div>
 			</div>
